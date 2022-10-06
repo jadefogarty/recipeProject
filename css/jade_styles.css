@@ -1,0 +1,158 @@
+.break{ /* add spacing between the sections */
+	height: 50px;
+	background-color: #f7bfca;
+}
+
+.row{
+	background-color: #f7bfca;
+}
+
+.header{
+    text-align: center;
+	padding: 20px;
+}
+
+.title{
+	margin-top: 15px;
+}
+
+.content{
+	width: 100%;
+	display: grid;
+	grid-template: auto / repeat(auto-fit,minmax(250px, 1fr));
+	gap: 3px;
+}
+
+.textField{
+	padding: 5px;
+	border: 3px dashed #50af51;
+	border-radius: 6px;
+	background-image: url('../img/searchIcon.png');
+	background-position: 0px 0px;
+	background-size: 35px 35px;;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+	margin: 5px;
+}
+.textField:focus{
+	outline: none;
+	border: 3px solid #50af51;
+}
+
+.myButton{
+	color: white;
+	background-color: #50af51;
+	padding: 5px 10px;
+	margin: 10px;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+.myButton:hover{
+	background-color: #85c786;
+}
+
+
+.rb{
+	height: 15px;
+	width: 15px;
+}
+.rb:hover{
+	cursor: pointer;
+}
+.rbLabel{
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+
+
+.start{
+	background-color: #add9e6;
+	justify-content: center;
+	text-align: center;
+	height: 400px;
+}
+
+
+.startText{
+	margin-top: 140px;
+	color: #ffffff;
+	background: linear-gradient(to right, black 0, white 10%, black 20%);
+	background-position: 0;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: shine 7s infinite linear;
+	animation-fill-mode: forwards;
+	-webkit-text-size-adjust: none;
+	font-weight: 700;
+	font-size: 20px;
+	white-space: nowrap;
+}
+@keyframes shine{
+  0% {background-position: 0}
+  60% {background-position: 500px}
+  100% {background-position: 500px}
+}
+
+.recipeCard{
+    height: 360px;
+    width: 100%;
+    text-align: center;
+	justify-content: center;
+    background-color: #add9e6;
+    border: 2px solid #f7bfca;
+	padding: 3px;
+}
+.recipeTitle{
+	text-decoration: overline;
+	text-decoration-thickness: 1px;
+	margin-top: 5px;
+
+}
+
+.recipeImage{
+	height: 200px;
+	width: 200px;
+}
+
+
+.filter{
+    justify-content: center;
+	padding: 100px;
+}
+
+.popOut{
+	position: relative;
+	display: inline-block;
+	border-bottom: 2px dashed black;
+}
+
+
+.popOut .popOutText{
+	visibility: hidden;
+	width: 300px;
+
+	background-color: #50af51;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	
+	position: absolute;
+	z-index: 1;
+}
+
+.popOut:hover .popOutText{
+	visibility: visible;
+}
+
+.moreDetailsBtn{
+	text-decoration: none;
+	color: #50af51;
+
+}
+.moreDetailsBtn:hover{
+	color: #85c786;
+	text-decoration: underline dashed #85c786;
+	cursor: pointer;
+}
+
